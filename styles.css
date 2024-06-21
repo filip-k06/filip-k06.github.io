@@ -450,46 +450,35 @@ ul {
     right: 10px;
 }
 
-@media screen and (max-width: 600px) {
-    .zeitstrahl::after {
-        left: 31px;
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
     }
 
-    .container-zeitstrahl {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .container-zeitstrahl::after {
-        left: 60px;
-    }
-
-    .right {
-        left: 0%;
+    .header {
+        padding: 15px 0;
     }
 
     .main-content {
-        flex-direction: column;
+        padding: 10px;
     }
 
-    .slides {
-        flex-direction: column;
-        width: 100%; /* Vollbreite für mobile Geräte */
+    .footer {
+        padding: 5px 0;
     }
 
-    .slide {
-        min-width: auto;
+    .tab button {
+        font-size: 14px;
+        padding: 8px 12px;
     }
 
-    .portfolio-slider {
-        max-width: 100%; /* Vollbreite für mobile Geräte */
+    .skill-bar span {
+        font-size: 14px;
     }
 
     .slide-content {
-        position: relative; /* Ändern, damit es nicht über dem Bild schwebt */
-        width: 100%;
-        background-color: transparent; /* Hintergrund transparent machen */
+        position: relative;
+        background-color: transparent;
         padding: 10px;
         text-align: center;
         box-sizing: border-box;
@@ -500,12 +489,5 @@ ul {
         bottom: 10px;
         transform: none;
     }
-
-    .prev-slide {
-        left: 10px;
-    }
-
-    .next-slide {
-        right: 10px;
-    }
 }
+
