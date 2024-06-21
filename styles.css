@@ -223,6 +223,9 @@ h2 {
     display: flex;
     position: relative;
     margin-bottom: 50px;
+}
+
+.centered {
     justify-content: center;
     align-items: center;
 }
@@ -230,6 +233,11 @@ h2 {
 .image-text {
     width: 50%;
     height: auto;
+}
+
+.image-small {
+    height: 40vw;
+    width: auto;
 }
 
 .zertifikat {
@@ -245,10 +253,259 @@ h2 {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
-    max-width: 40%;
+    max-width: 45%;
     text-align: center;
 }
 
 .text-overlay h1, .text-overlay p {
     margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.zeitstrahl {
+    position: relative;
+    max-width: 80vw;
+    margin: 20px auto;
+}
+
+.zeitstrahl::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #2ec4b6;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.container-zeitstrahl {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container-zeitstrahl.left {
+    left: 0;
+}
+
+.container-zeitstrahl.right {
+    left: 50%;
+}
+
+.container-zeitstrahl::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #2ec4b6;
+    border: 4px solid #FF9F1C;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.content-zeitstrahl {
+    padding: 20px 30px;
+    background-color: #fff3e3;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background-color: #2ec4b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.tab button.active {
+    background-color: #ff9f1c;
+}
+
+.tab button:hover {
+    background-color: #ff9f1c;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.skill-box span {
+    width: 100px;
+    margin-right: 7.5%;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    margin-right: 5px;
+}
+
+.box.filled {
+    background-color: #4caf50;
+}
+
+.portfolio-slider {
+    position: relative;
+    max-width: 100%; /* Vollbreite für mobile Geräte */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Vollbreite für mobile Geräte */
+}
+
+.slide {
+    min-width: 100%;
+    flex: 1;
+    display: flex;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.slide-content h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.slide-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .zeitstrahl::after {
+        left: 31px;
+    }
+
+    .container-zeitstrahl {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .container-zeitstrahl::after {
+        left: 60px;
+    }
+
+    .right {
+        left: 0%;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .slides {
+        flex-direction: column;
+        width: 100%; /* Vollbreite für mobile Geräte */
+    }
+
+    .slide {
+        min-width: auto;
+    }
+
+    .portfolio-slider {
+        max-width: 100%; /* Vollbreite für mobile Geräte */
+    }
+
+    .slide-content {
+        position: relative; /* Ändern, damit es nicht über dem Bild schwebt */
+        width: 100%;
+        background-color: transparent; /* Hintergrund transparent machen */
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .prev-slide, .next-slide {
+        top: auto;
+        bottom: 10px;
+        transform: none;
+    }
+
+    .prev-slide {
+        left: 10px;
+    }
+
+    .next-slide {
+        right: 10px;
+    }
 }
