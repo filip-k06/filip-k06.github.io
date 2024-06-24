@@ -55,9 +55,9 @@ function loadPage(page) {
                     <div class="zeitstrahl">
                         <div class="container-zeitstrahl left">
                             <div class="content-zeitstrahl">
-                                <h3>Primarschule</h3>
-                                <p>2013 - 2019</p>
-                                <p>Primarschule Full</p>
+                                <h3>IMS</h3>
+                                <p>2022 - zurzeit</p>
+                                <p>Informatikmittelschule Baden</p>
                             </div>
                         </div>
                         <div class="container-zeitstrahl right">
@@ -69,9 +69,9 @@ function loadPage(page) {
                         </div>
                         <div class="container-zeitstrahl left">
                             <div class="content-zeitstrahl">
-                                <h3>IMS</h3>
-                                <p>2022 - zurzeit</p>
-                                <p>Informatikmittelschule Baden</p>
+                                <h3>Primarschule</h3>
+                                <p>2013 - 2019</p>
+                                <p>Primarschule Full</p>
                             </div>
                         </div>
                     </div>
