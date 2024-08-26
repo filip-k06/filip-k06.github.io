@@ -317,6 +317,21 @@ function loadPage(page) {
                 <div class="content inner">
                     <h2>Zertifikate und Zeugnisse</h2>
                     <div class="image-box centered">
+                        <img src="BBB_Zeugnis.png" alt="Zertifikat 1" class="zertifikat">
+                    </div>
+                    <div class="image-box centered">
+                        <img src="Kanti_Zeugnis_4.png" alt="Zertifikat 1" class="zertifikat">
+                    </div>
+                    <div class="image-box centered">
+                        <img src="Kanti_Zeugnis_3.png" alt="Zertifikat 1" class="zertifikat">
+                    </div>
+                    <div class="image-box centered">
+                        <img src="Kanti_Zeugnis_2.png" alt="Zertifikat 1" class="zertifikat">
+                    </div>
+                    <div class="image-box centered">
+                        <img src="Kanti_Zeugnis_1.png" alt="Zertifikat 1" class="zertifikat">
+                    </div>
+                    <div class="image-box centered">
                         <img src="page-0.png" alt="Zertifikat 1" class="zertifikat">
                     </div>
                     <div class="image-box centered">    
