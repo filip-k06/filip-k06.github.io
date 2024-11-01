@@ -44,7 +44,7 @@ function loadPage(page) {
                 <div class="content inner">
                     <div class="info">
                         <h2>Über mich</h2>
-                        <p>Grüezi! Mein Name ist Filip Kritzner. Ich bin in der zweiten Klasse der Informatikmittelschule Baden und suche zurzeit ein Praktikum für mein viertes Ausbildungsjahr August 2025.</p>
+                        <p>Grüezi! Mein Name ist Filip Kritzner. Ich bin in der dritten Klasse der Informatikmittelschule Baden.</p>
                         <p>Nutzen Sie das Menü, um zwischen den verschiedenen Seiten zu navigieren.</p>
                         <p>Herzlichen Dank, dass Sie sich die Zeit genommen haben, meine Webseite zu besuchen!</p>
                         <p></p>
